@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Css Transitions</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			}
+		#box{
+			display: flex;
+			height: 200px;
+			width: 200px;
+			background-color:cyan;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			transition-property: all;
+			transition-duration: 1s;
+			/*transition-timing-function: ease-in-out;*/
+			/*transition-delay: 2s;*/
+		}
+		#box:hover{
+			background-color: white;
+			color:red;
+			height: 400px;
+			width: 400px;
+			border-top-left-radius: 50px;
+			border-bottom-left-radius: 50px;
+			font-size: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>This is Css Tutorial</h1>
+	<div class="container">
+		<div id="box">
+			I am Box
+		</div>
+	</div>
+	
+</body>
+</html>

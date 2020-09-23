@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Events and Listening</title>
+</head>
+<style>
+	#btn{
+		border-radius: 20px;
+		padding: 10px;
+		background-color: grey;
+	}
+</style>
+<body>
+	<div class="container">
+		
+		<h3>Browser Events</h3>
+		<ul id="list">
+			<li>Click</li>
+			<li>contextmenu</li>
+			<li>mouseover/mouseout</li>
+			<li>mousedowm/mouseup</li>
+			<li>mousemove</li>
+			<li>submit</li>
+			<li>focus</li>
+			<li>DOMcontentloaded</li>
+			<li>transitionend</li>
+		</ul>
+	</div>
+	<button id="btn" onclick ="toggleHide()">Show/Hide</button>
+
+	<script>
+		let list = document.getElementById('list');
+		list.addEventListener('mouseover',function run(){
+			console.log("Mouse Inside");
+		});
+
+		list.addEventListener('mouseout',function run(){
+			console.log("Mouse Outside");
+		});
+
+		function toggleHide(){
+			let btn = document.getElementById('btn');
+			let list = document.getElementById('list');
+			if(list.style.display != 'none'){
+				list.style.display = 'none';
+			}
+			else{
+				list.style.display = 'block';
+			}
+
+		}
+	</script>
+	
+</body>
+</html>

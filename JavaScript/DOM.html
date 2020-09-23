@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM in javaScript</title>
+</head>
+<body>
+	<div class="container" id = "main">
+		
+		<ul id="nav">
+			<li class="item-1">Home</li>
+			<li class="item-2">About Us</li>
+			<li class="item-3">Services</li>
+			<li class="item-4">Contact Us</li>
+		</ul>
+
+		
+	</div>
+	<div class="container"></div>
+	<script type="text/javascript">
+		let main = document.getElementById('main');
+		console.log(main);
+
+		let nav = document.getElementById('nav');
+		console.log(nav);
+
+		let cont = document.getElementsByClassName('container');
+		console.log(cont);
+
+		let sel = document.querySelector('#nav>li');
+		console.log("It selects ",sel);
+
+		let sele = document.querySelectorAll('#nav>li');
+		console.log("It selects ",sele);
+
+	</script>
+</body>
+</html>

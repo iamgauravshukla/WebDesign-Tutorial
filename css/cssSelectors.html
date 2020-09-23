@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Selectors</title>
+	<style type="text/css">
+		/*Elementer Selector*/
+		p{
+			color: blue;
+			border: 2px dotted red;
+		}
+		h1{
+			color:cyan;
+		}
+		/*Id Selector*/
+
+		#heading{
+			color : red;
+		}
+		#ptut{
+			color : brown;
+		}
+		
+		/*Combine Grouping selector with id and elemnets*/
+		#footer,#para{
+			font-style: italic;
+			font-size: 50px;
+		}
+		/*Class Selector*/
+		.tut,.greenBg {
+			font-style: italic;
+			}
+		
+		.darkBg{
+			background-color: black;
+			color: white;
+		}
+		h1 ,p{
+			background-color: grey;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 id = "heading" class="tut greenBg">Css Tutorial Selectors</h1>
+	<p id ="ptut" class="tut">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam assumenda perspiciatis facere laboriosam iste illum, unde odit error pariatur quaerat! Expedita consequuntur, doloribus possimus illo minus deserunt sit fugit recusandae.</p>
+	<div>
+		<p id = "para">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequatur provident placeat sapiente optio impedit dolor dicta quam velit eum!
+		</p>
+		<footer id ="footer" class="darkBg">I am Footer &copy; Gaurav</footer>
+	</div>
+	
+</body>
+</html>

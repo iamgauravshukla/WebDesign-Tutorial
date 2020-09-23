@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox In CSS</title>
+	<style type="text/css">
+
+		.container{
+			height: 600px;
+			width: 100%;
+			border:3px solid brown;
+
+			display: flex;
+
+			/*Flex properties for  main container*/
+
+			flex-direction: row;              /*Default Value for flex */
+			/*flex-direction: column;*/
+			/*flex-direction: row-reverse;*/
+			/*flex-direction: column-reverse;*/
+
+			/*Wrapping*/
+
+			flex-wrap: wrap;            /* Default Value */
+			/*flex-wrap: wrap-reverse;*/
+
+			/*Wrapping and Direction at same time*/
+
+			/*flex-flow: row wrap;*/
+
+
+			/*Justify contents in horizontal order*/
+
+			/*justify-content: center;*/
+			/*justify-content: space-between;*/
+			/*justify-content: space-evenly;*/
+			/*justify-content: space-around;*/
+
+
+			/*This is use to assign in vertical order*/
+			align-items: center;
+
+			/*To assign in buttom*/
+			/*align-items: flex-end;*/
+
+			/*To assign in top*/
+			/*align-items: flex-start;*/
+
+			/*This add vertically even spaces*/
+			align-items: stretch;
+		}
+
+		.item{
+
+			width: 130px;
+			height: 130px;
+			background-color: tomato;
+			border:3px solid green;
+			margin: 10px;
+			padding: 20px;
+
+			/*Flex properties for itmes*/
+		}
+		#item1{
+			/*box with higher order will goes in last*/
+			/*order: 2;*/
+
+			/*Flex grow will increase its size , more flex grow value more the size is*/
+			flex-grow: 2;
+
+			/*Flex shrink will decrease its size at time of shrinking*/
+			flex-shrink: 2;
+		}
+		#item2{
+			/*order: 3;*/
+			/*flex-grow: 3;
+			flex-shrink: 3;*/
+
+			/*To change size in flex when flex direction is row then it acts on width and when flex direction is column then it 
+			acts on Height*/
+			flex-basis: 300px;
+
+		}
+		#item3{
+			align-self: flex-center;
+			align-self: flex-end;
+			align-self: flex-start;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Flex Box</h1>
+	<div class="container">
+		<div class="item" id="item1">1</div>
+		<div class="item" id="item2">2</div>
+		<div class="item" id="item3">3</div>
+		
+	</div>
+</body>
+</html>

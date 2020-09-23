@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Keyframes and Animations</title>
+		<style type="text/css">
+		.container{
+			background-color: yellowgreen;
+		}
+		.box{
+			background-color: grey;
+			margin: 5px 10px;
+			width: 400px;
+			height: 400px;
+			position: relative;
+			/*animation-name: Gaurav;*/
+			animation-name:gaurav;
+			animation-duration: 8s;
+			animation-iteration-count: 3;
+			/*animation-fill-mode: forwards;*/
+			/*animation-timing-function: ease-in-out;*/
+			animation-delay: 1s;
+			/*animation-direction: reverse;*/
+
+		}
+		@keyframes Gaurav{
+			from{
+				width: 300px;
+				}
+			to{
+				width: 900px;
+				}
+						}
+
+		@keyframes gaurav{
+			0%{
+				top:0px;
+				left: 0px;
+
+			}
+			25%{
+
+				top:250px;
+				left: 0px;
+			}
+			75%{
+				top:250px;
+				left:250px;
+			}
+			100%{
+				top:0px;
+				left: 250px;
+
+			}
+			
+		}
+
+		</style>
+
+	</head>
+
+
+	<body>
+		<div class="container">
+			<div class="box">
+				I am Mr. Box
+			</div>
+		</div>
+		
+	</body>
+	</html>

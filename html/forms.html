@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms and Input</title>
+</head>
+<body>
+	<!-- MOST IMPORTANT -->
+	<h3> Form Tutorial</h3>
+	<form>
+		<div>			
+		<label for="name">First Name :</label> <input type="text" name="fname" id ="name">
+		</div>
+		<br>
+		<div>			
+		Last Name : <input type="text" name="lname">
+		</div>
+		<br>
+		<div>
+		Email : <input type="email" name="email">
+		</div>
+		<br>
+		<div>
+			<label for = "message">Message</label> <textarea id ="message"></textarea>
+		</div>
+		<div>
+			<label for ="todate">Date</label><input type="date" name="subdate" id = "todate">
+		</div>
+		<br>
+		<div>
+			Donate : <input type="number" name="phone">
+		</div>
+		<br>
+		<div>
+			<label for='box'>Student :</label>
+			<input type="checkbox" name="ques" value="Student" id = "box">
+		</div>
+		<br>
+		<div>
+			Gender :<br>
+			<input type="radio" name="gender" value="male"> Male<br>
+			<input type="radio" name="gender" value="female">Female
+		</div>
+		<br>
+		<div>
+			<label for="car"></label>
+			<select name="cars" id = "car">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="fiat">Fiat</option>
+				  <option value="audi">Audi</option>
+			</select>
+
+		</div>
+		<br>
+		<div>
+			<input type="submit" value="submit">
+			<input type="reset" value="reset">
+		</div>
+	</form>
+	
+</body>
+</html>

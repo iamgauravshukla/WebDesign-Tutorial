@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loops in JavaScript</title>
+</head>
+<body>
+	<div class="container">
+		
+
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nemo sed eos impedit odit dolor, corporis sit quaerat, numquam necessitatibus totam?</p>
+	</div>
+
+	<script>
+		console.log("Loops");
+
+		let friends = ["gaurav","mohan","sohan","Binod"];
+		//for each loop
+		friends.forEach(function f(element){
+			console.log("Hello Friends " + element);
+		});
+
+		//for of loop
+		for (element of friends){
+			console.log("Hello Friends " + element + " for of loop");
+		}
+
+		let student = {
+			name : "Gaurav",
+			roll : 90,
+			course : "B.tech CSE",
+			college : "IILM"
+		}
+
+		//use to iterate through object
+		for (key in student){
+			console.log(`The key  ${key} of student is ${student[key]} `);
+		}
+
+		//while loop
+		let i = 0;
+		while(i<4){
+			console.log(`Value of I is ${i}`);
+			i++;
+		}
+
+		//Do while
+		let j = 10;
+		do{
+			console.log(`Value of J is ${i}`);
+			j++;
+		}while(j<4);
+
+	</script>
+	
+</body>
+</html>

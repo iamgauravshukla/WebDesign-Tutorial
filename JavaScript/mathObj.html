@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Math Object Tutorial</title>
+</head>
+<body>
+	<div class="container">
+		
+	Math object Tutorial
+	</div>
+	
+	<script type="text/javascript">
+		let m = Math;
+		console.log(m);
+
+		let a = 99.9998;
+		let b = 87;
+
+		console.log("Value of a and b is : ",a,b);
+		console.log("Rounded Value of a and b is : ",Math.round(a),Math.round(b));
+
+		console.log("3^2 is ",Math.pow(3,2));
+		console.log("Square Root of 36 is : ",Math.sqrt(36));
+		console.log("Square Root of 36 is : ",Math.sqrt(50));
+
+		//Ceil and floor
+		console.log(Math.ceil(6.8));
+		console.log(Math.floor(6.7));
+
+		//Min and Max
+		console.log("Min value in 10 , 12 , 6 is : ",Math.min(10,12,6));
+		console.log("Max value in 10 , 12 , 6 is :",Math.max(10,12,6));
+
+		//Generating Random Number 
+		let min = 1;
+		let max = 100;
+		let rand = a + (b-a)*Math.random();
+		let r = Math.round(rand);
+
+		console.log("Random Number : ",r);
+	</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alignment & Floating</title>
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Raleway:wght@100&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+
+	body{
+		font-family: 'Grenze Gotisch', cursive;
+		}
+	*{
+		box-sizing: border-box;
+	}
+	.container{
+		width: 900px;
+		border:4px groove red;
+		border-radius: 20px;
+		margin: 25px auto;
+		
+	}
+	.item{
+		border :4px solid grey;
+		border-radius: 20px;
+		margin: 6px 5px;
+		padding: 12px 5px;
+		background-color: #B5EBD0; 
+	}
+	.img{
+		width: 200px;
+		height: 150px;
+		float: right;
+		padding: 10px 10px;
+	}
+	.img1{
+		width: 200px;
+		height: 150px;
+		float: right;
+		padding-bottom: 15px;
+		padding-left: 10px;
+
+	}
+	#fruit{
+		float: left;
+		width: 48%;
+
+	}
+	#computer{
+		float: right;
+		width: 48%;
+
+	}
+	#mobile{
+		/*When any element from other directions disturb me i use clear*/
+		/*float: left;*/
+		clear: both;
+		width: 99%;
+	}
+	
+	h3,#fruitpara,#comppara,#mobilepara{
+		/*left right center justify*/
+		text-align: justify;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="fruit" class = "item">
+			<h3>Fruit Shop</h3>
+			<p id="fruitpara" class="para">
+				<img src="fruit.png" class = "img">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facere minima magni obcaecati mollitia voluptatem provident beatae repellat inventore necessitatibus, quisquam aspernatur, a sint delectus, rerum vero porro recusandae sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloribus quasi nesciunt nostrum vitae optio explicabo deserunt quos, repudiandae incidunt, sed nisi accusantium reiciendis, eos velit pariatur. Eius perspiciatis obcaecati nam fugit modi esse optio recusandae illum totam, saepe cum.
+			</p>
+			
+		</div>
+		<div id="computer" class = "item">
+			<h3>Computer Shop</h3>
+			<p id="comppara" class="para">
+				<img src="computer.png" class = "img">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facere minima magni obcaecati mollitia voluptatem provident beatae repellat inventore necessitatibus, quisquam aspernatur, a sint delectus, rerum vero porro recusandae sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloribus quasi nesciunt nostrum vitae optio explicabo deserunt quos, repudiandae incidunt, sed nisi accusantium reiciendis, eos velit pariatur. Eius perspiciatis obcaecati nam fugit modi esse optio recusandae illum totam, saepe cum.
+			</p>
+			
+		</div>
+		<div id="mobile" class = "item">
+			<h3>Mobile Shop</h3>
+			<p id="mobilepara" class="para">
+				<img src="mobile.png" class = "img1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facere minima magni obcaecati mollitia voluptatem provident beatae repellat inventore necessitatibus, quisquam aspernatur, a sint delectus, rerum vero porro recusandae sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloribus quasi nesciunt nostrum vitae optio explicabo deserunt quos, repudiandae incidunt, sed nisi accusantium reiciendis, eos velit pariatur. Eius perspiciatis obcaecati nam fugit modi esse optio recusandae illum totam, saepe cum.
+			</p>
+			
+		</div>
+		<div id="glasses" class = "item">
+			<h3>Glasses Shop</h3>
+			<p id="glasspara" class="para">
+				<img src="glases.png" class = "img1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facere minima magni obcaecati mollitia voluptatem provident beatae repellat inventore necessitatibus, quisquam aspernatur, a sint delectus, rerum vero porro recusandae sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloribus quasi nesciunt nostrum vitae optio explicabo deserunt quos, repudiandae incidunt, sed nisi accusantium reiciendis, eos velit pariatur. Eius perspiciatis obcaecati nam fugit modi esse optio recusandae illum totam, saepe cum.
+			</p>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

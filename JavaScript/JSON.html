@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON JavaScript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let jsonObj = {
+			name : "Gaurav",
+			Course : "B.Tech Cse",
+			college : "IILM",
+			roll : 99
+		}
+		console.log(jsonObj);
+
+		let myJson = JSON.stringify(jsonObj);
+		console.log(myJson);
+
+		myJson = myJson.replace('Gaurav','Saurav');
+		console.log(myJson);
+
+		newJson = JSON.parse(myJson);
+		console.log(newJson);
+	</script>
+	
+</body>
+</html>

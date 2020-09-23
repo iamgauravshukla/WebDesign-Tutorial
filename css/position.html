@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Css Position Property</title>
+	<style type="text/css">
+		.container{
+			border: 3px groove blue;
+			background-color: grey;
+			
+			height: 4000px;
+		}
+		.box{
+			border: 2px solid red;
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			display: inline-block;
+		}
+		/*position : absolute , relative, fixed, sticky*/
+		#box3{
+			/*relative to its normal position and changes will happen at its old position
+			position: relative;*/
+
+			/*absolute to its normal position with parent position*/
+			/*position: absolute;*/
+
+			/*fixed with parent layout scroll at it's position*/
+			/*position: fixed;
+			right: 1px;
+			bottom: 3px;
+			border-radius: 100%;
+			width:50px;
+			height: 50px;
+			text-align: center;*/
+
+			position: sticky;
+			top:3px;
+
+		}
+		#box
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box" id="box1">1</div>
+		<div class="box" id="box2">2</div>
+		<div class="box" id="box3">3</div>
+		<div class="box" id="box4">4</div>
+	</div>
+</body>
+</html>

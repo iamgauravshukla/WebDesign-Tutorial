@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Css Grid Media Query</title>
+	<style type="text/css">
+
+		.container{
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas:
+			'navbar navbar navbar para'
+			'sidebar sidebar sidebar aside'
+			'footer footer footer footer' ;
+
+		}
+		.beauty{
+			border: 2px solid black;
+			padding: 5px 25px;
+			background-color: grey;
+		}
+
+		#navbar{
+			grid-area: navbar;
+
+		}
+		#sidebar{
+			grid-area: sidebar;
+		}
+		#aside{
+			grid-area: aside;
+		}
+
+		#para {
+			grid-area: para;
+		}
+		footer{
+			grid-area: footer;
+			text-align: center;
+		}
+		
+		@media (max-width: 500px) {
+			body{
+				background-color: red;
+			}
+			.container{
+				grid-template-areas:
+				'navbar navbar navbar navbar'
+				'sidebar sidebar sidebar sidebar'
+				'aside aside aside aside'
+				'footer footer footer footer' ;
+
+		}
+			#aside {
+				display: none;
+		}
+		span{
+			display: block;
+		}
+
+		}
+
+		@media (min-width: 500px) and (max-width: 700px) {
+			body{
+				background-color: blue;
+			}
+			.container{
+				grid-template-areas:
+				'navbar navbar navbar navbar'
+				'sidebar sidebar sidebar sidebar'
+				'aside aside aside aside'
+				'footer footer footer footer' ;
+
+		}
+		}
+
+		@media (min-width: 700px) and (max-width: 900px) {
+			body{
+				background-color: green;
+			}
+
+		}
+		@media (min-width: 900px){
+				body{
+				background-color: pink;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav id="navbar" class ="beauty">
+			<span>Home</span>
+			<span>About</span>
+			<span>Contact</span>
+			<span>Service</span>
+		</nav>
+		<div id="para">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate impedit necessitatibus et itaque perferendis odit, alias quia, vitae voluptates ad, quos tempora culpa fugiat repellendus. Commodi dolorem quo provident distinctio est corrupti doloremque velit, omnis atque repellendus porro nemo perferendis dolore et repudiandae nam ratione error consequuntur fuga maxime repellat quidem soluta voluptatibus. Magnam explicabo, rerum excepturi neque, vel repudiandae optio nam vero fuga ipsam quaerat maxime! Necessitatibus unde, qui ipsa aspernatur voluptate reprehenderit numquam debitis quos dicta ea non, fugiat quisquam natus libero nobis autem aperiam expedita placeat! Pariatur ipsum vero, autem nobis recusandae reiciendis doloribus eius ab quia.</p>
+		</div>
+		<section id="sidebar" class ="beauty">
+			<h2>I am Section</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ut nisi repellat dicta quo temporibus ipsa commodi, ipsam quod. Quos quis nulla deleniti iusto nostrum dolorem rerum labore omnis architecto vel asperiores, aspernatur distinctio. Reiciendis magni odit, numquam accusamus laboriosam molestias debitis accusantium voluptatibus alias perspiciatis, magnam ipsum sapiente fugiat hic quas vel fuga temporibus ut delectus commodi voluptas neque quibusdam, ab. Debitis expedita, dolorem optio nihil illum ipsum nobis quisquam, sit nulla, voluptatem laudantium. Laborum voluptate quod ipsa odio. Vel blanditiis quia pariatur eveniet voluptas omnis obcaecati consequuntur non, voluptate natus dicta quidem nostrum. Ea quasi dolorum, eius quas assumenda vero magni, dolor nemo sapiente officia cum quis cupiditate nulla? Impedit harum vitae dignissimos illum, molestiae veniam fuga delectus laboriosam doloremque rem corrupti, soluta animi eum quis autem, ullam? Ea doloremque voluptates consectetur aspernatur hic nisi, vitae blanditiis corporis totam odit! Illo, beatae sint ut! Veritatis voluptatibus doloribus, dolor voluptate beatae quidem voluptas numquam exercitationem aperiam quia natus accusantium modi impedit harum at qui laboriosam aspernatur deserunt laborum quos cupiditate, nostrum alias. Debitis similique minima consequuntur vero tempore dolorum a necessitatibus nisi cum. Sed voluptatem nihil eveniet! Labore eius iste et. Deserunt incidunt sapiente iusto dignissimos ut quidem, rem.</p>
+		</section>
+		<aside id="aside" class ="beauty">
+			<h2>More about us</h2>
+		</aside>
+	</div>
+	<footer class="beauty">I am footer</footer>
+	
+</body>
+</html>

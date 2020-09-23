@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>String Functions</title>
+</head>
+<body>
+	<div class="container">
+		<h1>I am String Functions</h1>
+		<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Reiciendis harum debitis molestias adipisci. Amet aspernatur, quidem, doloribus fugit eaque repellat culpa perspiciatis earum possimus ratione sequi perferendis quia explicabo laborum hic maxime iste adipisci libero, nihil molestias odit quo reprehenderit.</p>
+	</div>
+	
+	<script>
+		var Str = "I am one liner string";
+		console.log(Str);
+		//To position of first occurence of any sub string we use .indexOf
+		var pos = Str.indexOf('am');
+		console.log(pos);
+
+		//it gives last occurance of given sub string
+		pos = Str.lastIndexOf('i');
+		console.log(pos);
+
+		//to get substring from string or to slice any string
+
+		var substr = Str.slice(0,5); //it prints on lesser than given upper limit , .slice can accepts negative value
+		console.log(substr);
+
+		//slicing can also be done using substring but it doen't accept negative value
+
+		var substr2 = Str.substring(0,7);
+		console.log(substr2);
+
+		//another method
+		var line = "Hey I am Web Developer";
+		var sliced = line.substr(0,4);
+		console.log(sliced);
+
+		//Method 3
+		console.log(Str[3]);
+		//To replace a substring from string
+		var replaced = line.replace('Web','Python');
+		console.log(replaced);
+
+		//To convert into Upper Case
+		console.log(line.toUpperCase());
+
+		//To convert into Lower Case
+		console.log(line.toLowerCase());
+
+		//To concat or to merge two strings
+		var newStr = Str.concat(" "+line);
+		console.log(newStr);
+
+		//To remove extra spaces from start and end
+		var strSpaces = "     Hello Gaurav How ";
+		console.log(strSpaces);
+		console.log(strSpaces.trim());
+
+		//To extract a single Character from String
+
+		var charExt = line.charAt(2);
+		console.log(charExt);
+
+		//To get UTF-16 Charecter Code
+		var charCo = line.charCodeAt(2);
+		console.log(charCo);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scoping and IF Else in Javascript</title>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>I am Scoping And If Else </h1>
+		<div>
+			<ul>
+				<li>item-1</li>
+				<li>item-2</li>
+				<li>item-3</li>
+				<li>item-4</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		var string1 = "I am a string";
+		var string1 = "I am a string 2";
+		console.log(string1);
+		let a = 'u';
+		console.log(a);
+		{
+			let a = 'j';  //you can't asign another data into same variable after assigning it into let
+			console.log(a);
+		}
+
+		//Constants
+		const b = "I am constant i can't be changed";
+		console.log(b);
+
+		let age = 2;
+
+		//conditional
+
+		if(age>18){
+			console.log("You can Drink Red Bull : )");
+		}
+		else if(age==2){
+			console.log("Age is 2");
+		}
+		else{
+			console.log("You can't Drink.");
+		}
+
+		//Switch Case
+
+		const num = 20;
+
+		switch (num) {
+			case 10:
+			console.log("I am 10");
+			break;
+
+			case 20:
+			console.log("I am 20");
+			break;
+
+			case 30:
+			console.log("I am 30");
+			break;
+
+			default:
+			console.log("Value is non of 10 , 20 ,30");
+			break;
+
+		}
+
+	</script>
+</body>
+</html>

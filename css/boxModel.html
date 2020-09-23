@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box Model</title>
+
+	<style type="text/css">
+	.container{
+		background-color: #aedaae;
+		border: 4px solid black;
+
+		/*We can set pading left right top bottom*/
+		/*padding-top: 25px;
+		padding-left: 25px;*/
+
+		/*Paddind and margin order : TOP RIGHT Bottom Left*/
+		/*padding: 20px 30px 15px 10px;*/
+
+		/*also padding :y(top/right) x(bottom/left); */
+		padding: 30px 20px;
+
+		/*Same for margin also*/
+		margin: 30px 20px;
+		border-radius: 30px;
+		width: 700px;
+		box-sizing: border-box;
+
+	}	
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1> I am Box</h1>
+		<p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fuga eligendi, voluptates beatae a quia architecto ducimus laudantium, deleniti, modi temporibus ad tempore.</p>
+	</div>
+
+	<div class="container">
+		<h1> I am Box</h1>
+		<p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fuga eligendi, voluptates beatae a quia architecto ducimus laudantium, deleniti, modi temporibus ad tempore.</p>
+	</div>
+
+	<div class="container">
+		<h1> I am Box</h1>
+		<p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fuga eligendi, voluptates beatae a quia architecto ducimus laudantium, deleniti, modi temporibus ad tempore.</p>
+	</div>
+</body>
+</html>

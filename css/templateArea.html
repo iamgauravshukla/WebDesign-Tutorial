@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Template Area - Layouts Css Grid</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas:
+			'navbar navbar navbar navbar'
+			'sidebar sidebar sidebar aside' ;
+
+		}
+		.item{
+			border: 2px solid green;
+			background-color: yellow;
+		}
+		#navbar{
+			grid-area: navbar;
+
+		}
+		#sidebar{
+			grid-area: sidebar;
+		}
+		#aside{
+			grid-area: aside;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="navbar" class="item">
+			Home About Contact Services
+		</div>
+		<div id="sidebar" class="item">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore at, voluptate itaque blanditiis eligendi eveniet dolorem soluta adipisci atque voluptatem rerum quos asperiores laboriosam aut ratione explicabo. Harum, iure? Quo nobis possimus debitis tempore. Placeat nisi in nobis quibusdam reiciendis doloremque rem voluptas, necessitatibus libero, nostrum maiores. Odio culpa sit repudiandae iure placeat minus eius facere, tenetur, nisi aliquam enim voluptatum impedit sed explicabo excepturi mollitia! Distinctio id doloribus deserunt explicabo. Minus officiis voluptates hic quos odio reprehenderit, modi quae incidunt labore distinctio tenetur amet tempora recusandae atque quas esse at quo molestiae doloribus pariatur magni iste a eaque.
+		</div>
+		<div id="aside" class="item">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates reiciendis aspernatur eius velit, repudiandae iste cupiditate eveniet quas vero alias voluptatum corporis veniam sed vel et voluptas temporibus repellendus atque nemo dolore, dolorum cum! Iure placeat suscipit a esse facere molestiae voluptas, corrupti eum nemo? Ipsum quas repudiandae, voluptatum fuga! Architecto iure hic doloribus, saepe reprehenderit asperiores, vero consectetur sapiente.
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grids Tutorial In Css</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			/*grid-template-columns: 200px 200px 300px;*/
+			/*grid-template-columns: 200px auto 200px;*/
+			/*grid-template-columns: 1fr 3fr 1fr;*/
+			grid-template-columns: repeat(2, auto);
+			grid-gap: 1rem;	
+		}
+		.item{
+			background-color: grey;
+			/*width: 100px;
+			height: 100px;*/
+			border: 2px solid red;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">I am Item 1</div>
+		<div class="item">I am Item 2</div>
+		<div class="item">I am Item 3</div>
+		<div class="item">I am Item 4</div>
+		<div class="item">I am Item 5</div>
+		<div class="item">I am Item 6</div>
+		<div class="item">I am Item 7</div>
+		<div class="item">I am Item 8</div>
+		<div class="item">I am Item 9</div>
+		<div class="item">I am Item 3</div>
+		<div class="item">I am Item 4</div>
+		<div class="item">I am Item 5</div>
+		<div class="item">I am Item 6</div>
+		<div class="item">I am Item 7</div>
+		<div class="item">I am Item 8</div>
+		<div class="item">I am Item 9</div>
+	</div>
+	
+</body>
+</html>

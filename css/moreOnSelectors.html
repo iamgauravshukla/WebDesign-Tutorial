@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>More On Selectors</title>
+	<style type="text/css">
+		h1{
+			color: red;
+			background-color: grey;
+			text-align: center;
+		}
+		/*div li p{
+			color: blue;
+			background-color: cyan;
+			font-weight: bold;
+		}*/
+
+		/*to target direct child of parent div*/
+		div > p{
+			color: blue;
+			background-color: cyan;
+			font-weight: bold;
+		}
+
+		/*To apply effect on privious sibiling element*/
+		div + p{
+			color:white;
+			background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>More on Selectors</h1>
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li>
+				<p>I am a paragraph inside li.</p>
+				</li>
+				<p>I am para inside ul</p>
+			</ul>
+			<p>I am Paragraph</p>
+		</div>
+	<p>I am another Paragraph</p>
+	</div>
+	<p>I am outer paragraph</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrays and Objects</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ex, sint perspiciatis doloribus at explicabo quo repellendus deleniti iste asperiores dolore, aliquam, natus earum ad obcaecati voluptas inventore necessitatibus minima?</p>
+	
+</body>
+<script type="text/javascript">
+	
+	//object
+	let student = {
+		name : "Gaurav",
+		roll : 20,
+		course : "CSE",
+	}
+	console.log(student);
+
+	//Arrays is a Special type of object
+	let name = [1,2,3,true,undefined];
+	console.log(name);
+	console.log(name[2]);
+
+	let day = new Array("Mon","Tues","Wed",12,23); //another way to create array
+	day = day.sort(); //to sort an array
+	console.log(day.length);  //to get length
+	//to add an data into array
+	day.push("Thursday");
+	console.log(day);
+
+	//To decleare a size of array
+	let arr = new Array(24);
+	arr.push("First Element");
+	console.log(arr);
+
+</script>
+</html>

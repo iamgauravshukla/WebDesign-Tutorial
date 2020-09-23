@@ -1,0 +1,151 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url(img/main.jpg);
+	color: white;
+	height: 1000px;
+	background-repeat: no-repeat;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*Header Section*/
+header{
+	position: sticky;
+	top: 3px;
+}
+.left{
+	
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+}
+
+.mid{
+	display: block;
+	width : 40%;
+	margin: 10px auto;
+}
+.right{
+	
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.navbar{
+	display: inline-block;
+	
+	
+}
+
+.navbar li{
+	display: inline-block;
+	font-size: 15px;
+	font-family: 'Merienda One', cursive;
+}
+
+.navbar li a{
+	color:white;
+	padding: 20px;
+}
+
+.navbar li a:hover{
+	color: red;
+}
+
+
+.left .logo{
+	text-align: center;
+	font-family: 'Chewy', cursive;
+	position: relative;
+	width: 120px;
+	margin-left: 50px;
+	margin-top: 2px;
+	font-size: 20px;
+	font-family: 'Merienda One', cursive;
+}
+
+.btn{
+	border: none;
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: #bb3e3e;
+	color: white;
+	margin: 0px;
+	font-weight: bold;
+	cursor: pointer;
+	font-family: 'Merienda One', cursive;
+}
+
+.btn:hover{
+	border: 2px solid #6d1c1c;
+	background-color: #6d1c1c;
+	color: white;
+}
+
+/*Container section*/
+.container{
+	font-family: 'Merienda One', cursive;	
+	display: block;
+	margin: auto;
+	width: 40%;
+	padding: 10px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	background-color: rgb(0,0,0,0.3);
+	opacity: inherit;
+	margin-top: 100px;
+}
+
+.container:hover{
+	background-color: rgb(0,0,0,0.6);
+	opacity: inherit;
+}
+
+.container,.enquiry h1{
+	text-align: center;
+	color: white;
+}
+.form-fill input{
+	padding: 8px;
+	height: 15px;
+	margin-bottom: 8px;
+	width: 60%;
+	border:none;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: rgb(109,28,28,0.5);
+	opacity: inherit;
+	color:white;
+
+}
+
+
+.form-fill input::placeholder{
+	color: white;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.form-fill input:hover{
+	background-color: rgb(109,28,28,0.8);
+	opacity: inherit;
+}
+
+
+.container button{
+	width: 100px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}

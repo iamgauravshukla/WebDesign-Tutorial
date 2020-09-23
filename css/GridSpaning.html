@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spanning of grid</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: repeat(5,2fr);
+			grid-template-rows: repeat(4,1fr);
+		/*	grid-column-gap: 5rem;
+			grid-row-gap: 2rem;*/
+			grid-gap: 1rem;
+		}
+		.box{
+			border: 2px solid green;
+			background-color: grey;
+			padding: 20px;
+		}
+		.box:first-child{
+			/*grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 4;*/
+
+			/*another technique*/
+			grid-column: 1/span 3;
+			grid-row: 1/span 3;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">I am Box 1</div>
+		<div class="box">I am Box 2</div>
+		<div class="box">I am Box 3</div>
+		<div class="box">I am Box 4</div>
+		<div class="box">I am Box 5</div>
+		<div class="box">I am Box 6</div>
+		<div class="box">I am Box 7</div>
+		<div class="box">I am Box 8</div>
+		<div class="box">I am Box 9</div>
+		<div class="box">I am Box 10</div>
+	</div>
+	
+</body>
+</html>

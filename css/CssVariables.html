@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Css Variables and Custom Properties</title>
+	<style type="text/css">
+		/*root ki help se hum Global variable banate hain jo sare element ko target krne me use ho sakta hai*/
+		
+		:root{
+			--bgColor : grey;
+			--maxh :800px;
+
+		}
+		.box{
+		    /*variable ko  jis targeted css ke andar store karenge wo usi me use hoga dusre target ke liye firse usme add krna padega*/
+			--boxColor : cyan;
+			height: 200px;
+			width: 200px;
+			background-color: burlywood;
+			box-shadow: 10px 5px 7px var(--boxColor);
+			margin: 10px 20px;
+			flex-wrap: wrap;
+
+			}
+		.container{
+			/*Global variable ka istemal*/
+			max-width: var(--maxh);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			background-color: var(--bgColor);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		
+	</div>
+	
+</body>
+</html>

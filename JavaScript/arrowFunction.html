@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrow Function</title>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Tut Arrow Function</h1>
+	</div>
+	
+	<script type="text/javascript">
+		let greet = () => {
+			console.log("Good morning");
+		};
+
+		let sum = (a,b)=>{
+			return a + b;
+		};
+
+		//shortcut
+
+		let div = (a,b) => a/b;
+
+		let wish = () => console.log("Happy Birthday");
+
+		wish();
+
+		greet();
+
+		setTimeout(()=>{
+			console.log("We are inside Set Timeout using arrow function");
+		},2000);
+
+		let obj = {
+			greeting : "Good morning",
+			names : ["Gaurav","Prakash","Anil"],
+			speak(){
+				this.names.forEach((student)=>{
+					console.log(this.greeting + " Hello " + student);
+				});
+			}
+		}
+
+		obj.speak();
+	</script>
+</body>
+</html>
